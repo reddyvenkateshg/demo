@@ -9,7 +9,21 @@
 
   <name>running</name>
   <url>http://maven.apache.org</url>
-
+<build>
+ <plugins>  
+  <plugin>
+    <groupId>org.jboss.as.plugins</groupId>
+    <artifactId>jboss-as-maven-plugin</artifactId>
+    <version>7.9.Final</version>
+    <configuration>
+      <jbossHome>C:\jboss-as-7.1.1.Final</jbossHome>
+      <groupId>training</groupId>
+      <artifactId>practise</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </configuration>
+  </plugin>
+ </plugins>
+</build>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
